@@ -17,9 +17,9 @@ jobs:
 
     env:
       TEST_ENVIRONMENT: ${{ github.event.inputs.environment }}
-      CYPRESS_user_email: ${{ secrets.CYPRESS_USER_EMAIL }}
-      CYPRESS_user_password: ${{ secrets.CYPRESS_USER_PASSWORD }}
-      CYPRESS_wrong_password: ${{ secrets.CYPRESS_WRONG_PASSWORD }}
+      USER_EMAIL: ${{ secrets.USER_EMAIL }}
+      USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
+      WRONG_PASSWORD: ${{ secrets.WRONG_PASSWORD }}
 
     steps:
       - name: Checkout repository
