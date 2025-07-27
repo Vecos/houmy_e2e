@@ -39,3 +39,14 @@ Cypress.Commands.add('loginViaForm', (email, password) => {
   cy.get('input[name="password"]').type(password);
   cy.get('button[type="submit"]').click();
 });
+// Cypress.Commands.add('acceptCookies', () => {
+//     cy.xpath('/html/body/div[1]/aside/div/nav/div/button[1]').click();
+//     cy.xpath('/html/body/div[1]/aside/div/nav/div/div[1]/ul/li[2]/span').click();
+
+// });
+
+Cypress.Commands.add('addNewPortfolio', () => {
+  cy.get('input[name="name"]').type('Test portfolio');
+  cy.get('button[type="submit"]').click();
+
+});
